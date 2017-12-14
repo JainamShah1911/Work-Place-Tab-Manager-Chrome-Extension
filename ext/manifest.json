@@ -1,0 +1,23 @@
+{
+  "name": "Close All Tabs and Go to Work Mode",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "First Extension created by Jainam Shah",
+  "homepage_url": "http://shahjainam.com/#/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+        "default_icon": "icons/icon16.png",
+        "default_popup": "src/override/override.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/override/override.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
